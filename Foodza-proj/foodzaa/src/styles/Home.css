@@ -1,0 +1,9 @@
+.txt {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next line if the container is too narrow */
+    justify-content: flex-start; /* Align items from left to right */
+  }
+  
+  
+  /* Add any additional styles you need for the Restaurants component */
+  

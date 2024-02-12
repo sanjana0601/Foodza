@@ -1,0 +1,74 @@
+/* Reset some default styles */
+body, h1, h2, h3, h4, h5, h6, p, ul, li {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Navbar styles */
+  .navbar {
+    background-color: transparent;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .navbar-logo a {
+    color: #f7715e;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+  
+  .navbar-links {
+    display: flex;
+    list-style: none;
+  }
+  
+  .navbar-links a {
+    color:#f7715e;
+    text-decoration:none;
+    transition: color 0.3s;
+    padding: 10px 20px;
+    
+  }
+
+  .navbar-links a:hover {
+    color: #ffffff; /* Change the text color on hover (e.g., to yellow) */
+  }
+  
+  .navbar-toggle {
+    display: none; /* Hide the toggle button on larger screens */
+    background: transparent;
+    border: none;
+    font-size: 1.5rem;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  /* Media query for small screens (e.g., mobile devices) */
+  @media (max-width: 100%) {
+    .navbar-links {
+      flex-direction: column;
+      position: absolute;
+      top: 80px;
+      left: 0;
+      width: 100%;
+      background-color: #333;
+      display: none; /* Hide the links by default */
+    }
+  
+    .navbar-links.active {
+      display: flex; /* Show the links when the navbar is active */
+    }
+  
+    .navbar-links a {
+      padding: 10px;
+    }
+  
+    .navbar-toggle {
+      display: block; /* Show the toggle button on small screens */
+    }
+  }
+  
